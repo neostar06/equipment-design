@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipment design</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container form-group">
+    <form id="form">
+        Shape of Shell:   <select class="shape" id="exampleFormControlSelect1">
+            <option>Cylinder</option>
+            <option>Sphere</option>
+        </select><br /><br />
+        Working pressure(in kN/m^2):   <input class="pressure" type="number" step="any" /><br /><br />
+        Liquid Height(in m):    <input class="height" type="number" step="any"/><br /><br />
+        Density of Liquid(in kg/m^3):   <input class="density" type="number" /><br /><br />
+        Working Temperature(in Celsius):    <input class="temp" type="number" /><br /><br />
+        Inner Diameter(in m):   <input class="indiam" type="number" step="any" value='0' /><br /><br />
+        Outer Diameter(in m):   <input class="outdiam" type="number" step="any" value="0" /><br /><br />
+        Type of heating method: <select class="heatingmethod" id="exampleFormControlSelect1">
+            <option>for unheated parts</option>
+            <option>for body parts heated by means of steam, hot water
+            or similar</option>
+            <option>for shielded vessel</option>
+            <option>for unshielded vessel</option>
+        </select><br /><br />
+        Material of Construction:   <span></span><br /><br />
+        <img src="img1.jpg" /><br /><br />
+        <img src="img2.jpg" /><br /><br />
+        <img src="img3.jpg" /><br /><br />
+        Choose allowable stress value from above(in *10^8 N/m^2):   <input class="fvalue" type="number" step="any" /><br /><br />
+        Type of welding:    <select class="jvalue" id="exampleFormControlSelect1">
+            <option>class 1</option>
+            <option>class 1 with single-welded butt-joints with backing strip</option>
+            <option>class 2 </option>
+            <option>class 2 with single-welded butt-joints with backing strip</option>
+            <option>class 3 with double-welded butt-joints with full penetration</option>
+            <option>class 3 with single-welded butt-joints with backing strip</option>
+            <option>class 3 with single-welded butt-joints with backing strip which
+            may not remain in place</option>
+            <option>class 3 without single-welded butt-joints with backing strip</option>
+            <option>class 3 single full lap joints for circumferential seams only</option>
+        </select><br /><br />
+        Corrosion Allowance(in mm): <input class="cavalue" type="number" step="any"/><br/><br />
+        Type of Head:   <select class="headtype" id="exampleFormControlSelect1">
+            <option>Flat head</option>
+            <option>Conical head</option>
+            <option>Torispherical(standard dished)and ellipsoidal dished head</option>
+        </select><br /><br />
+        Type of Flat head:  <select class="flatheadtype">
+            <option>Flanged flat heads butt welded to shell</option>
+            <option>Plates welded to the inside of the shell</option>
+            <option>Plates welded to the end of the shell(no inside welding)</option>
+            <option>Plates welded to the end of the shell(inside welding)</option>
+            <option>Covers riveted or bolted with full face gaskets to shells</option>
+        </select><br /><br />
+        Half apex angle:    <select class="conicalhead">
+            <option>20</option>
+            <option>30</option>
+            <option>45</option>
+            <option>60</option>
+        </select><br /><br />
+        Nozzle Thickness(in mm):    <input type="number" class="nozzlethickness" step="any" /><br /><br />
+        Nozzle Length outside(in m):    <input type="number" class="nozzleoutside" step="any" /><br /><br />
+        Nozzle length inside(in m): <input type="number" class="nozzleinside" step="any" /><br /><br />
+        Nozzle Diameter(in m):  <input type="number" class="nozzlediam" step="any"/><br /><br />
+
+        <button class="submit" type="button" >Submit</button>
+        <button class="reset" type="reset" >reset</button>
+    </form>
+</div>
+<div class="container" id="result">
+
+</div>
+<script type="text/javascript" src="main_code.js"></script>
+</body>
+</html>

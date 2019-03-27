@@ -1,0 +1,11 @@
+body{
+    background-color: burlywood !important;
+}
+.container{
+    text-align: left;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-inside: 2%;
+    text-space: 10px;
+}
